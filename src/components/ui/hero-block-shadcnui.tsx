@@ -43,7 +43,7 @@ export function HeroBlock() {
           >
             <div className="mx-auto h-[16.8rem] w-[16.8rem] overflow-hidden rounded-full border-4 border-white shadow-lg">
               <img
-                src={`${import.meta.env.BASE_URL}images/nyk.jpg`}
+                src={`${import.meta.env.BASE_URL}images/Head_Shot.jpeg`}
                 alt={`${hero.name} profile`}
                 className="block h-full w-full scale-[1.3] -translate-y-[8%] object-cover"
               />
