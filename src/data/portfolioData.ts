@@ -21,7 +21,7 @@ export const hero = {
   name: "Akash Vilas Parthe",
   title: "Business Analyst | AI Engineer | Data Engineer",
   tagline:
-    "I translate business goals into data products, intelligent systems, and reliable pipelines that improve decision speed and impact.",
+    "MSBA candidate at Carnegie Mellon with 3+ years of experience building scalable data systems using Python, Azure, and Microsoft Fabric to drive business impact.",
   location: "Pittsburgh, PA",
   socialLinks: {
     github: "https://github.com/akashparthe24/akash-parthe24",
@@ -93,13 +93,43 @@ export const skillLevels = [
   { label: "Stakeholder Leadership", value: 88 },
 ];
 
-export const featuredProjects = [
+export type ProjectEntry = {
+  title: string;
+  category?: string;
+  description: string;
+  problem: string;
+  approach: string;
+  impact: string;
+  whyItMatters: string;
+  highlights: {
+    impact: string;
+    scale: string;
+    tools: string;
+  };
+  tech: string[];
+  github: string;
+  demo: string;
+};
+
+export const featuredProjects: ProjectEntry[] = [
   {
     title: "Angel Protection System",
     category: "AI + Product Analytics",
     description:
-      "Led capstone delivery of a firearm detection system from requirements to deployment milestones. Built a real-time computer vision pipeline with explainable AI outputs for human-in-the-loop monitoring.",
-    impact: ["20+ FPS inference", "20% higher precision", "25% fewer false positives"],
+      "Enabled faster safety decisions by converting live video into explainable, high-confidence threat alerts.",
+    problem:
+      "Manual surveillance delayed threat response and produced high false-alarm overhead.",
+    approach:
+      "Led end-to-end delivery and built a real-time detection workflow using Python, OpenCV, Amazon Rekognition, and Amazon Bedrock for clear alert explanations.",
+    impact:
+      "Achieved 20+ FPS inference while improving precision by 20% and reducing false positives by 25%.",
+    whyItMatters:
+      "Improves response speed and trust in alerts, reducing operational risk in high-stakes environments.",
+    highlights: {
+      impact: "20+ FPS | +20% precision | -25% false positives",
+      scale: "Real-time human-in-the-loop monitoring",
+      tools: "Python, OpenCV, Amazon Rekognition, Amazon Bedrock",
+    },
     tech: ["Amazon Rekognition", "Amazon Bedrock", "Python", "Transfer Learning", "OpenCV"],
     github: "https://github.com/akashparthe24/akash-parthe24",
     demo: "",
@@ -108,8 +138,20 @@ export const featuredProjects = [
     title: "Cricket Player RAG Chatbot",
     category: "AI / NLP",
     description:
-      "Designed and deployed an end-to-end RAG system on unstructured PDF data with robust retrieval validation and hallucination mitigation.",
-    impact: ["Grounded LLM responses", "CPU-aware inference tuning", "Deployed on Hugging Face Spaces"],
+      "Enabled faster insight retrieval from unstructured documents through grounded, query-ready AI responses.",
+    problem:
+      "Scattered PDFs made information retrieval slow, inconsistent, and difficult to trust.",
+    approach:
+      "Built a document Q&A assistant with clean preprocessing, vector search (FAISS), and reliability checks, then deployed it on Hugging Face Spaces.",
+    impact:
+      "Improved answer reliability with retrieval guardrails and hallucination controls while keeping run-time costs low on CPU.",
+    whyItMatters:
+      "Turns static documentation into a dependable decision-support interface that reduces research time.",
+    highlights: {
+      impact: "Grounded responses with reliability guardrails",
+      scale: "Multi-document unstructured PDF corpus",
+      tools: "Python, LangChain, FAISS, Hugging Face, Transformers",
+    },
     tech: ["LangChain", "FAISS", "Transformers", "Python", "Hugging Face Spaces"],
     github: "https://github.com/akashparthe24/akash-parthe24",
     demo: "",
@@ -118,12 +160,20 @@ export const featuredProjects = [
     title: "Smart Validation Tool",
     category: "Data Engineering + Quality",
     description:
-      "Engineered a multiprocessing Python validation system to compare source and target datasets at scale for migration reliability.",
-    impact: [
-      "90% reduction in manual validation effort",
-      "10M+ records validated in ~20 minutes",
-      "30% faster release cycles",
-    ],
+      "Accelerated migration delivery by automating source-target data validation at enterprise scale.",
+    problem:
+      "Manual reconciliation slowed releases and increased migration defect risk.",
+    approach:
+      "Built a parallel Python utility to automate source-target comparisons and generate release-ready validation outputs.",
+    impact:
+      "Reduced manual effort by 90%, validated 10M+ rows in ~20 minutes, and accelerated release cycles by 30%.",
+    whyItMatters:
+      "Improves migration confidence, lowers operational risk, and increases delivery velocity for enterprise programs.",
+    highlights: {
+      impact: "↓90% manual effort | 10M+ rows in ~20 mins | +30% release speed",
+      scale: "Enterprise-scale migration datasets",
+      tools: "Python, Multiprocessing, SQL, Azure Data Engineering",
+    },
     tech: ["Python", "Multiprocessing", "SQL", "Azure Data Engineering"],
     github: "https://github.com/akashparthe24/akash-parthe24",
     demo: "",
@@ -133,11 +183,24 @@ export const featuredProjects = [
 export const projectsByCategory = [
   {
     category: "AI Projects",
-    projects: [
+    projects: <ProjectEntry[]>[
       {
         title: "Angel Protection System",
         description:
-          "Real-time computer vision + explainable AI for safety detection with measurable precision gains.",
+          "Enabled faster safety decisions by converting live video into explainable, high-confidence threat alerts.",
+        problem:
+          "Manual surveillance delayed threat response and produced high false-alarm overhead.",
+        approach:
+          "Led end-to-end delivery and built a real-time detection workflow using Python, OpenCV, Amazon Rekognition, and Amazon Bedrock for clear alert explanations.",
+        impact:
+          "Achieved 20+ FPS inference while improving precision by 20% and reducing false positives by 25%.",
+        whyItMatters:
+          "Improves response speed and trust in alerts, reducing operational risk in high-stakes environments.",
+        highlights: {
+          impact: "20+ FPS | +20% precision | -25% false positives",
+          scale: "Real-time human-in-the-loop monitoring",
+          tools: "Python, OpenCV, Amazon Rekognition, Amazon Bedrock",
+        },
         tech: ["Python", "OpenCV", "Amazon Rekognition", "Bedrock"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",
@@ -145,7 +208,20 @@ export const projectsByCategory = [
       {
         title: "Cricket Player RAG Chatbot",
         description:
-          "Document-grounded chatbot with retrieval pipelines and post-processing for reliability.",
+          "Enabled faster insight retrieval from unstructured documents through grounded, query-ready AI responses.",
+        problem:
+          "Scattered PDFs made information retrieval slow, inconsistent, and difficult to trust.",
+        approach:
+          "Built a document Q&A assistant with clean preprocessing, vector search (FAISS), and reliability checks, then deployed it on Hugging Face Spaces.",
+        impact:
+          "Improved answer reliability with retrieval guardrails and hallucination controls while keeping run-time costs low on CPU.",
+        whyItMatters:
+          "Turns static documentation into a dependable decision-support interface that reduces research time.",
+        highlights: {
+          impact: "Grounded responses with reliability guardrails",
+          scale: "Multi-document unstructured PDF corpus",
+          tools: "Python, LangChain, FAISS, Hugging Face, Transformers",
+        },
         tech: ["LangChain", "FAISS", "LLMs", "Hugging Face"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",
@@ -154,11 +230,24 @@ export const projectsByCategory = [
   },
   {
     category: "Data Engineering Projects",
-    projects: [
+    projects: <ProjectEntry[]>[
       {
         title: "Metadata-Driven Ingestion Framework",
         description:
-          "Built a scalable ingestion architecture supporting full/incremental loads to reduce manual onboarding effort.",
+          "Accelerated analytics readiness by standardizing data onboarding with a metadata-driven ingestion model.",
+        problem:
+          "Manual onboarding and inconsistent ingestion delayed reporting and increased engineering overhead.",
+        approach:
+          "Built a metadata-driven ingestion process with full/incremental loads and quality checks using Azure Data Factory, PySpark, T-SQL, and Microsoft Fabric.",
+        impact:
+          "Reduced manual onboarding effort by 40% and improved downstream reporting reliability.",
+        whyItMatters:
+          "Improves time-to-insight and creates a scalable data foundation for finance and operations decisions.",
+        highlights: {
+          impact: "↓40% manual onboarding effort",
+          scale: "Enterprise multi-source analytics ingestion",
+          tools: "Azure Data Factory, PySpark, T-SQL, Microsoft Fabric",
+        },
         tech: ["Azure Data Factory", "PySpark", "T-SQL", "Fabric"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",
@@ -166,7 +255,20 @@ export const projectsByCategory = [
       {
         title: "Semantic Model Migration Automation",
         description:
-          "Automated migration from Import/DirectQuery to Direct Lake with improved performance and lower migration errors.",
+          "Reduced BI migration risk and cycle time through semantic model modernization automation.",
+        problem:
+          "Manual model conversion increased migration effort, errors, and performance uncertainty.",
+        approach:
+          "Built Python automation to convert model patterns, flag unsupported features, and simplify validation in Microsoft Fabric and Power BI.",
+        impact:
+          "Cut semantic model migration time by 60% while improving consistency and reducing rework.",
+        whyItMatters:
+          "Speeds delivery of high-performance BI assets while lowering transformation risk for business-critical reporting.",
+        highlights: {
+          impact: "↓60% semantic migration time",
+          scale: "Enterprise BI semantic model workloads",
+          tools: "Python, Microsoft Fabric, Power BI, SQL",
+        },
         tech: ["Python", "Microsoft Fabric", "Power BI", "SQL"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",
@@ -174,7 +276,20 @@ export const projectsByCategory = [
       {
         title: "Smart Validation Tool",
         description:
-          "Built a multiprocessing validation utility to verify source-target parity across large-scale migration datasets.",
+          "Accelerated migration delivery by automating source-target data validation at enterprise scale.",
+        problem:
+          "Manual reconciliation slowed releases and increased migration defect risk.",
+        approach:
+          "Built a parallel Python utility to automate source-target comparisons and generate release-ready validation outputs.",
+        impact:
+          "Reduced manual effort by 90%, validated 10M+ rows in ~20 minutes, and accelerated release cycles by 30%.",
+        whyItMatters:
+          "Improves migration confidence, lowers operational risk, and increases delivery velocity for enterprise programs.",
+        highlights: {
+          impact: "↓90% manual effort | 10M+ rows in ~20 mins | +30% release speed",
+          scale: "Enterprise-scale migration datasets",
+          tools: "Python, SQL, Data Validation, Azure",
+        },
         tech: ["Python", "SQL", "Data Validation", "Azure"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",
@@ -182,7 +297,20 @@ export const projectsByCategory = [
       {
         title: "Unified FinOps Observability Platform",
         description:
-          "Created cross-platform cost and operations dashboards for Fabric, Synapse, and ADF to improve cloud efficiency.",
+          "Improved cloud cost governance by unifying operations and FinOps observability across platforms.",
+        problem:
+          "Fragmented cost and usage visibility limited proactive optimization and governance decisions.",
+        approach:
+          "Built integrated data pipelines and dashboards with T-SQL, PySpark, Power BI, Azure Synapse, and Microsoft Fabric to unify cost and operations tracking.",
+        impact:
+          "Improved cost visibility and operational efficiency by 10-15% through centralized monitoring and KPI-driven reporting.",
+        whyItMatters:
+          "Enables finance and engineering leaders to make faster cost-performance tradeoff decisions and sustain cloud efficiency.",
+        highlights: {
+          impact: "+10-15% cost visibility and operational efficiency",
+          scale: "Unified monitoring across Fabric, Synapse, and ADF",
+          tools: "T-SQL, PySpark, Power BI, Microsoft Fabric, Azure Synapse",
+        },
         tech: ["T-SQL", "PySpark", "Power BI", "Microsoft Fabric", "Azure Synapse"],
         github: "https://github.com/akashparthe24/akash-parthe24",
         demo: "",

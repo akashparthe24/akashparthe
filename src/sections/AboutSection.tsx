@@ -11,7 +11,7 @@ function AboutSection() {
       />
 
       <Card className="about-consistent-card">
-        <div className="max-w-3xl space-y-5">
+        <div className="w-full space-y-5">
           <p className="text-[1.03rem] leading-relaxed text-slate-600">
             I&apos;m a Business Analytics graduate candidate at Carnegie Mellon University with 3+ years of
             experience building data-driven products and scalable systems. I work at the intersection of business
