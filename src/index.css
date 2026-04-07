@@ -444,15 +444,28 @@ textarea:focus-visible {
 }
 
 .skills-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
 }
 
 .skill-category-card {
-  padding: 1rem;
+  padding: 1rem 1.1rem;
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.skills-grid .skill-category-card:nth-child(odd) {
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.88), rgba(247, 252, 255, 0.8));
+}
+
+.skills-grid .skill-category-card:nth-child(even) {
+  background: linear-gradient(150deg, rgba(242, 249, 255, 0.92), rgba(236, 245, 252, 0.84));
 }
 
 .skill-category-card h3 {
-  margin-bottom: 0.6rem;
+  margin: 0.18rem 0 0;
 }
 
 .skill-category-card ul {
@@ -827,7 +840,7 @@ textarea:focus-visible {
 .contact-consistent-header {
   display: grid;
   gap: 0.9rem;
-  justify-items: start;
+  justify-items: stretch;
   text-align: left;
 }
 
@@ -838,8 +851,10 @@ textarea:focus-visible {
   letter-spacing: -0.01em;
 }
 
+.contact-consistent-header .section-title-wrap,
 .contact-consistent-header .subtitle {
-  max-width: 72ch;
+  width: 100%;
+  max-width: none;
 }
 
 .contact-cta-btn {
@@ -1133,6 +1148,11 @@ textarea:focus-visible {
 
   .contact-chips {
     grid-template-columns: 1fr;
+  }
+
+  .skill-category-card {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
   }
 
   .bg-blob-top {

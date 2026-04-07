@@ -33,7 +33,7 @@ function ContactSection() {
           <SectionTitle
             eyebrow="Contact"
             title="Let&apos;s Build Something Impactful"
-            subtitle="Open to Business Analytics, AI Engineering, and Data Engineering opportunities. Let&apos;s connect on work where data, product, and AI create measurable business value."
+            subtitle="Open to Business Analyst roles where I can partner with stakeholders to translate business needs into data-driven solutions, improve processes, and enable strategic decision-making. Preferred roles: Business Analyst, Product Analyst, Operations Analyst, Analytics Consultant. Let&apos;s connect if you&apos;re looking for a BA who combines business acumen with technical execution."
           />
           <Button as="a" href={`mailto:${contact.email}`} className="contact-cta-btn">
             Let&apos;s Connect

@@ -19,9 +19,9 @@ export const navLinks = [
 
 export const hero = {
   name: "Akash Vilas Parthe",
-  title: "Business Analyst | AI Engineer | Data Engineer",
+  title: "Business Analyst | Product Analyst | Analytics Consultant",
   tagline:
-    "MSBA candidate at Carnegie Mellon with 3+ years of experience building scalable data systems using Python, Azure, and Microsoft Fabric to drive business impact.",
+    "Business Analyst and MSBA candidate at Carnegie Mellon with 3+ years of experience turning business needs into data-driven decisions using SQL, Python, Power BI, Azure, and Microsoft Fabric.",
   location: "Pittsburgh, PA",
   socialLinks: {
     github: "https://github.com/akashparthe24/akash-parthe24",
@@ -32,53 +32,65 @@ export const hero = {
 
 export const about = {
   summary:
-    "I am an MS in Business Analytics candidate at Carnegie Mellon University with 3+ years of industry experience working at the intersection of business strategy, data analytics, and AI systems. I specialize in translating ambiguous business problems into structured analytics solutions and measurable KPIs. My work spans building scalable data pipelines, BI dashboards, and AI applications including computer vision and retrieval-augmented systems. I focus on delivering practical, data-driven solutions that help organizations make faster, more informed decisions.",
+    "I am a Business Analyst and MSBA candidate at Carnegie Mellon University with 3+ years of experience partnering with stakeholders to translate business goals into measurable outcomes. At LTIMindtree, I led requirements discussions and process improvements that contributed to a 40% cost reduction, 30% faster delivery, and executive visibility into $5M+ cloud spend.",
   highlights: [],
 };
 
 export const skillCategories = [
   {
-    title: "Business Analytics",
+    title: "Business Analysis & Requirements",
+    items: [
+      "Requirements Gathering",
+      "Business Requirements Documents (BRDs)",
+      "Functional Requirements Documents (FRDs)",
+      "Stakeholder Management",
+      "Business Process Improvement",
+      "Gap Analysis",
+      "Root Cause Analysis",
+      "User Story Development",
+      "Acceptance Criteria",
+      "UAT Coordination",
+      "Process Analysis",
+      "KPI Design",
+      "Agile",
+      "Scrum",
+      "Sprint Planning",
+      "SDLC",
+      "Change Management",
+      "Unified Modeling Language (UML)",
+    ],
+  },
+  {
+    title: "Analytics & Visualization",
     items: [
       "SQL",
+      "Python",
       "Excel",
       "Power BI",
       "Tableau",
-      "Stakeholder Communication",
-      "Business Process Improvement",
-      "User Story Development",
-      "Unified Modeling Language (UML)",
-      "Process Analysis",
-      "KPI Design",
-      "Financial & Operations Analytics",
+      "Data Analysis",
+      "Statistical Analysis",
+      "Data Visualization",
+      "Business Intelligence",
+      "Executive Reporting",
+      "Dashboard Design",
+      "Data Storytelling",
+      "KPI Development",
     ],
   },
   {
-    title: "AI / Machine Learning",
-    items: [
-      "Python",
-      "Machine Learning",
-      "Deep Learning",
-      "NLP",
-      "Computer Vision",
-      "RAG Systems",
-      "LLM Integration",
-      "GenAI-Assisted SQL Modernization",
-      "Prompt Engineering",
-    ],
-  },
-  {
-    title: "Data Engineering",
+    title: "Technical Proficiency",
     items: [
       "ETL Pipelines",
       "Data Warehousing",
-      "Spark / PySpark",
+      "Data Modeling",
+      "PySpark",
+      "Apache Spark",
       "Databricks",
       "Apache Airflow",
-      "Data Modeling",
       "Azure Data Factory",
       "Azure Synapse",
-      "ADLS",
+      "Azure Data Lake Storage",
       "REST APIs",
       "Microsoft Fabric",
       "Snowflake",
@@ -114,65 +126,65 @@ export type ProjectEntry = {
 export const featuredProjects: ProjectEntry[] = [
   {
     title: "Angel Protection System",
-    category: "AI + Product Analytics",
+    category: "Business Analysis + Product Delivery",
     description:
-      "Enabled faster safety decisions by converting live video into explainable, high-confidence threat alerts.",
+      "Led a stakeholder-driven safety initiative that improved alert quality and decision confidence for security teams.",
     problem:
-      "Manual surveillance delayed threat response and produced high false-alarm overhead.",
+      "Security teams needed faster, more reliable alerts because manual monitoring created delays and high false-alarm volume.",
     approach:
-      "Led end-to-end delivery and built a real-time detection workflow using Python, OpenCV, Amazon Rekognition, and Amazon Bedrock for clear alert explanations.",
+      "Facilitated requirements workshops with security users, translated needs into specifications, and coordinated UAT and cross-functional delivery; Python, OpenCV, Amazon Rekognition, and Amazon Bedrock supported implementation.",
     impact:
       "Achieved 20+ FPS inference while improving precision by 20% and reducing false positives by 25%.",
     whyItMatters:
-      "Improves response speed and trust in alerts, reducing operational risk in high-stakes environments.",
+      "Improved trust in alerts and enabled faster operational decision-making in a high-risk environment.",
     highlights: {
       impact: "20+ FPS | +20% precision | -25% false positives",
-      scale: "Real-time human-in-the-loop monitoring",
-      tools: "Python, OpenCV, Amazon Rekognition, Amazon Bedrock",
+      scale: "Real-time human-in-the-loop monitoring workflow",
+      tools: "Requirements Workshops, UAT, Stakeholder Management, Python, Amazon Rekognition",
     },
     tech: ["Amazon Rekognition", "Amazon Bedrock", "Python", "Transfer Learning", "OpenCV"],
     github: "https://github.com/akashparthe24/akash-parthe24",
     demo: "",
   },
   {
-    title: "Cricket Player RAG Chatbot",
-    category: "AI / NLP",
+    title: "FinOps Executive Dashboard",
+    category: "Business Analysis + Financial Analytics",
     description:
-      "Enabled faster insight retrieval from unstructured documents through grounded, query-ready AI responses.",
+      "Built executive cost visibility that helped leadership monitor cloud spend and make faster optimization decisions.",
     problem:
-      "Scattered PDFs made information retrieval slow, inconsistent, and difficult to trust.",
+      "Finance and engineering teams lacked unified visibility into $5M+ cloud spend, limiting timely cost decisions.",
     approach:
-      "Built a document Q&A assistant with clean preprocessing, vector search (FAISS), and reliability checks, then deployed it on Hugging Face Spaces.",
+      "Led cross-functional workshops with finance and engineering stakeholders, defined cost KPIs, and delivered a Power BI dashboard backed by Microsoft Fabric and Azure Synapse data.",
     impact:
-      "Improved answer reliability with retrieval guardrails and hallucination controls while keeping run-time costs low on CPU.",
+      "Improved cost visibility and operational efficiency by 10-15% through centralized KPI reporting.",
     whyItMatters:
-      "Turns static documentation into a dependable decision-support interface that reduces research time.",
+      "Enabled executive teams to make faster, data-backed cost-performance tradeoff decisions.",
     highlights: {
-      impact: "Grounded responses with reliability guardrails",
-      scale: "Multi-document unstructured PDF corpus",
-      tools: "Python, LangChain, FAISS, Hugging Face, Transformers",
+      impact: "+10-15% cost visibility and operational efficiency",
+      scale: "$5M+ cloud spend across platforms",
+      tools: "Stakeholder Workshops, KPI Development, Power BI, Microsoft Fabric, Azure Synapse",
     },
-    tech: ["LangChain", "FAISS", "Transformers", "Python", "Hugging Face Spaces"],
+    tech: ["Power BI", "Microsoft Fabric", "Azure Synapse", "T-SQL", "PySpark"],
     github: "https://github.com/akashparthe24/akash-parthe24",
     demo: "",
   },
   {
     title: "Smart Validation Tool",
-    category: "Data Engineering + Quality",
+    category: "Business Process Improvement",
     description:
-      "Accelerated migration delivery by automating source-target data validation at enterprise scale.",
+      "Improved release readiness by replacing manual validation with a stakeholder-driven automation workflow.",
     problem:
-      "Manual reconciliation slowed releases and increased migration defect risk.",
+      "Manual validation created release bottlenecks and increased risk in migration delivery.",
     approach:
-      "Built a parallel Python utility to automate source-target comparisons and generate release-ready validation outputs.",
+      "Conducted stakeholder interviews and gap analysis with analyst teams, captured requirements, and implemented an automated source-target validation process aligned to business needs.",
     impact:
       "Reduced manual effort by 90%, validated 10M+ rows in ~20 minutes, and accelerated release cycles by 30%.",
     whyItMatters:
-      "Improves migration confidence, lowers operational risk, and increases delivery velocity for enterprise programs.",
+      "Reduced delivery risk and improved release confidence while increasing operational speed.",
     highlights: {
       impact: "↓90% manual effort | 10M+ rows in ~20 mins | +30% release speed",
       scale: "Enterprise-scale migration datasets",
-      tools: "Python, Multiprocessing, SQL, Azure Data Engineering",
+      tools: "Stakeholder Interviews, Gap Analysis, Process Automation, Python, SQL, Azure",
     },
     tech: ["Python", "Multiprocessing", "SQL", "Azure Data Engineering"],
     github: "https://github.com/akashparthe24/akash-parthe24",
@@ -187,15 +199,15 @@ export const projectsByCategory = [
       {
         title: "Angel Protection System",
         description:
-          "Enabled faster safety decisions by converting live video into explainable, high-confidence threat alerts.",
+          "Partnered with security stakeholders to improve alert quality and support faster response decisions.",
         problem:
-          "Manual surveillance delayed threat response and produced high false-alarm overhead.",
+          "Manual monitoring caused delayed response and high false-alarm overhead.",
         approach:
-          "Led end-to-end delivery and built a real-time detection workflow using Python, OpenCV, Amazon Rekognition, and Amazon Bedrock for clear alert explanations.",
+          "Led requirements workshops, translated needs into acceptance criteria, and coordinated UAT while supporting delivery using Python, OpenCV, Amazon Rekognition, and Amazon Bedrock.",
         impact:
           "Achieved 20+ FPS inference while improving precision by 20% and reducing false positives by 25%.",
         whyItMatters:
-          "Improves response speed and trust in alerts, reducing operational risk in high-stakes environments.",
+          "Enabled faster frontline decisions with more trusted alerts in a safety-critical setting.",
         highlights: {
           impact: "20+ FPS | +20% precision | -25% false positives",
           scale: "Real-time human-in-the-loop monitoring",
@@ -208,19 +220,19 @@ export const projectsByCategory = [
       {
         title: "Cricket Player RAG Chatbot",
         description:
-          "Enabled faster insight retrieval from unstructured documents through grounded, query-ready AI responses.",
+          "Addressed slow document search by creating a reliable, business-friendly knowledge retrieval assistant.",
         problem:
-          "Scattered PDFs made information retrieval slow, inconsistent, and difficult to trust.",
+          "Scattered documents slowed decision-making and reduced confidence in retrieved information.",
         approach:
-          "Built a document Q&A assistant with clean preprocessing, vector search (FAISS), and reliability checks, then deployed it on Hugging Face Spaces.",
+          "Conducted user research on information needs and delivered a structured retrieval workflow using Python, FAISS, and validation guardrails.",
         impact:
-          "Improved answer reliability with retrieval guardrails and hallucination controls while keeping run-time costs low on CPU.",
+          "Improved response reliability and reduced time spent searching across unstructured documents.",
         whyItMatters:
-          "Turns static documentation into a dependable decision-support interface that reduces research time.",
+          "Helped users access critical information faster for day-to-day decisions.",
         highlights: {
-          impact: "Grounded responses with reliability guardrails",
+          impact: "Faster information retrieval with higher response reliability",
           scale: "Multi-document unstructured PDF corpus",
-          tools: "Python, LangChain, FAISS, Hugging Face, Transformers",
+          tools: "User Research, Requirements Discovery, Python, FAISS, Hugging Face",
         },
         tech: ["LangChain", "FAISS", "LLMs", "Hugging Face"],
         github: "https://github.com/akashparthe24/akash-parthe24",
@@ -234,15 +246,15 @@ export const projectsByCategory = [
       {
         title: "Metadata-Driven Ingestion Framework",
         description:
-          "Accelerated analytics readiness by standardizing data onboarding with a metadata-driven ingestion model.",
+          "Collaborated with analytics stakeholders to standardize onboarding and improve reporting readiness.",
         problem:
-          "Manual onboarding and inconsistent ingestion delayed reporting and increased engineering overhead.",
+          "Manual onboarding delays and inconsistent processes slowed reporting delivery.",
         approach:
-          "Built a metadata-driven ingestion process with full/incremental loads and quality checks using Azure Data Factory, PySpark, T-SQL, and Microsoft Fabric.",
+          "Gathered requirements from reporting teams and implemented a standardized metadata-driven onboarding process using Azure Data Factory, PySpark, T-SQL, and Microsoft Fabric.",
         impact:
           "Reduced manual onboarding effort by 40% and improved downstream reporting reliability.",
         whyItMatters:
-          "Improves time-to-insight and creates a scalable data foundation for finance and operations decisions.",
+          "Improved time-to-insight and created a repeatable foundation for business reporting decisions.",
         highlights: {
           impact: "↓40% manual onboarding effort",
           scale: "Enterprise multi-source analytics ingestion",
@@ -255,15 +267,15 @@ export const projectsByCategory = [
       {
         title: "Semantic Model Migration Automation",
         description:
-          "Reduced BI migration risk and cycle time through semantic model modernization automation.",
+          "Worked with BI stakeholders to speed dashboard modernization while reducing migration risk.",
         problem:
-          "Manual model conversion increased migration effort, errors, and performance uncertainty.",
+          "Manual model migration created delays, rework, and performance uncertainty for reporting teams.",
         approach:
-          "Built Python automation to convert model patterns, flag unsupported features, and simplify validation in Microsoft Fabric and Power BI.",
+          "Captured migration requirements from BI users, prioritized high-impact conversion rules, and automated model transition and validation in Python, Power BI, and Microsoft Fabric.",
         impact:
           "Cut semantic model migration time by 60% while improving consistency and reducing rework.",
         whyItMatters:
-          "Speeds delivery of high-performance BI assets while lowering transformation risk for business-critical reporting.",
+          "Enabled faster release of modernized dashboards with lower risk to business-critical reporting.",
         highlights: {
           impact: "↓60% semantic migration time",
           scale: "Enterprise BI semantic model workloads",
@@ -276,19 +288,19 @@ export const projectsByCategory = [
       {
         title: "Smart Validation Tool",
         description:
-          "Accelerated migration delivery by automating source-target data validation at enterprise scale.",
+          "Partnered with analyst teams to remove validation bottlenecks and improve release confidence.",
         problem:
-          "Manual reconciliation slowed releases and increased migration defect risk.",
+          "Manual validation effort delayed releases and increased migration risk.",
         approach:
-          "Built a parallel Python utility to automate source-target comparisons and generate release-ready validation outputs.",
+          "Conducted stakeholder interviews and gap analysis, then implemented an automated validation workflow using Python and SQL based on analyst requirements.",
         impact:
           "Reduced manual effort by 90%, validated 10M+ rows in ~20 minutes, and accelerated release cycles by 30%.",
         whyItMatters:
-          "Improves migration confidence, lowers operational risk, and increases delivery velocity for enterprise programs.",
+          "Improved confidence in release quality while increasing delivery speed for business teams.",
         highlights: {
           impact: "↓90% manual effort | 10M+ rows in ~20 mins | +30% release speed",
           scale: "Enterprise-scale migration datasets",
-          tools: "Python, SQL, Data Validation, Azure",
+          tools: "Stakeholder Interviews, Gap Analysis, Python, SQL, Azure",
         },
         tech: ["Python", "SQL", "Data Validation", "Azure"],
         github: "https://github.com/akashparthe24/akash-parthe24",
@@ -297,15 +309,15 @@ export const projectsByCategory = [
       {
         title: "Unified FinOps Observability Platform",
         description:
-          "Improved cloud cost governance by unifying operations and FinOps observability across platforms.",
+          "Led finance and engineering alignment to improve cloud cost governance through shared KPI visibility.",
         problem:
           "Fragmented cost and usage visibility limited proactive optimization and governance decisions.",
         approach:
-          "Built integrated data pipelines and dashboards with T-SQL, PySpark, Power BI, Azure Synapse, and Microsoft Fabric to unify cost and operations tracking.",
+          "Led requirements workshops with finance and engineering stakeholders to define cost KPIs, then delivered integrated Power BI reporting across Fabric, Synapse, and ADF.",
         impact:
           "Improved cost visibility and operational efficiency by 10-15% through centralized monitoring and KPI-driven reporting.",
         whyItMatters:
-          "Enables finance and engineering leaders to make faster cost-performance tradeoff decisions and sustain cloud efficiency.",
+          "Enabled leadership to make faster cost-performance decisions using consistent KPI reporting.",
         highlights: {
           impact: "+10-15% cost visibility and operational efficiency",
           scale: "Unified monitoring across Fabric, Synapse, and ADF",
@@ -333,17 +345,17 @@ export const experience = [
     tech: ["Stakeholder Communication", "Program Representation", "Community Building"],
   },
   {
-    role: "Data Engineer",
+    role: "Business Analyst",
     company: "LTIMindtree",
     location: "Mumbai, India",
     timeline: "Oct 2022 - Aug 2025",
     bullets: [
-      "Accelerated SQL Server and Snowflake migration to Azure Synapse and Microsoft Fabric by 50% with automated object/script transfer and GenAI-assisted legacy SQL interpretation.",
-      "Reduced manual validation effort by 90% by building a multiprocessing Python Smart Validation Tool that verified 10M+ records in ~20 minutes and shortened release cycles by 30%.",
-      "Streamlined RDBMS-to-ADLS ingestion by 40% with a metadata-driven, dynamically partitioned framework supporting millions of daily records.",
-      "Improved cost visibility and operational efficiency by 10-15% by building a unified FinOps observability platform across Fabric, Synapse, and ADF.",
-      "Reduced data quality incidents by 30% through a self-service framework with autonomous scheduling and anomaly detection.",
-      "Cut semantic model migration time by 60% by automating conversion from Import/DirectQuery to Direct Lake.",
+      "Partnered with business and engineering stakeholders to gather migration requirements and accelerated SQL Server/Snowflake migration to Azure Synapse and Microsoft Fabric by 50%.",
+      "Worked with analyst teams to identify validation pain points, translated needs into automation requirements, and reduced manual validation effort by 90% while validating 10M+ records in ~20 minutes and improving release speed by 30%.",
+      "Collaborated with reporting stakeholders to standardize onboarding requirements, improving ingestion efficiency by 40% and reducing delivery delays.",
+      "Led cross-functional KPI definition with finance and engineering teams, improving cost visibility and operational efficiency by 10-15%.",
+      "Aligned data quality requirements with business users and reduced data quality incidents by 30% through a self-service monitoring framework.",
+      "Coordinated BI modernization requirements and reduced semantic model migration time by 60% through workflow automation.",
     ],
     tech: ["Microsoft Fabric", "Azure Synapse", "ADF", "PySpark", "T-SQL", "Power BI", "Python", "Databricks"],
   },
@@ -351,7 +363,7 @@ export const experience = [
     role: "Graduate Engineering Trainee",
     company: "LTIMindtree",
     location: "Mumbai, India",
-    timeline: "Jul 2022 - Sep 2022",
+    timeline: "Jun 2022 - Sep 2022",
     bullets: [
       "Completed intensive SQL, Python, and Azure training, enabling faster delivery of production-grade cloud data solutions.",
       "Built an ADF ingestion pipeline for Azure SQL to ADLS bulk migration, improving transfer speed by 40% while maintaining data integrity.",

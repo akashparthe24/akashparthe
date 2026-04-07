@@ -10,7 +10,6 @@ function ProjectsSection() {
       <SectionTitle
         eyebrow="Projects"
         title="Portfolio by Domain"
-        subtitle="Grouped to make recruiter review fast and role-aligned."
       />
 
       <div className="project-categories">

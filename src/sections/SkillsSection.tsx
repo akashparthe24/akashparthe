@@ -9,7 +9,7 @@ function SkillsSection() {
       <SectionTitle
         eyebrow="Skills"
         title="Cross-Functional Expertise"
-        subtitle="Structured across analytics, AI engineering, and modern data platforms."
+        subtitle="Combining business analysis with technical execution to drive measurable outcomes."
       />
 
       <div className="skills-grid">
